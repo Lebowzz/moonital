@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/moonital logo dark.png" />
+    <base href="https://moonital.com/" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <title>Moonital</title>
+  </head>
+
+  <!--Header-->
+  <section id="main-header">
+    <button
+      onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})"
+    >
+      <img src="images/moonital logo dark.png" class="logo-img" />
+    </button>
+
+    <button
+      onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})"
+    >
+      <p>Home</p>
+    </button>
+    <button
+      onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})"
+    >
+      <p>About</p>
+    </button>
+    <button
+      onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"
+    >
+      <p>Services</p>
+    </button>
+    <button
+      onclick="document.getElementById('contact-us').scrollIntoView({behavior:'smooth'})"
+    >
+      <p>Contact us</p>
+    </button>
+  </section>
+
+  <body>
+    <!--Home Section-->
+    <section id="home">
+      <div id="home-content">
+        <h1>Moonital</h1>
+        <h2>Software engineering from outer space</h2>
+        <button
+          onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"
+          id="default-btn"
+        >
+          Services
+        </button>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+      <div id="about-content">
+        <div class="left-half">
+          <h1>About</h1>
+          <p class="about-p1">
+            We are a group of tech enthusiasts who’s passion is to develop
+            various kinds of ideas into the program of your choice.
+          </p>
+          <p class="about-p2">
+            We take care of all the steps needed in order to build apps, web
+            apps or websites, from design to developing them.
+          </p>
+        </div>
+
+        <div class="right-half">
+          <img src="images/web-design-pic1.jpg" />
+          <img src="images/web-dev3.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="services">
+      <div id="services-content">
+        <div class="service-left-half">
+          <div class="service-left-text">
+            <img src="images/iphone.png" class="services-imgs" />
+            <h1>App development</h1>
+            <div>
+              <p>Have an idea for a new app?</p>
+              <br />
+              <p>
+                Turn it into reality! we will take care of all the designing and
+                developement for you and build it into the dream you want it to
+                be.
+              </p>
+            </div>
+            <a href="learnmore.html">
+              <button id="default-btn">Learn more</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-middle">
+          <div class="service-middle-text">
+            <img src="images/browser.png" class="services-imgs" />
+            <h1>Web App development</h1>
+            <div>
+              <p>Making your app accessible for everyone!</p>
+              <br />
+              <p>
+                Bring life to your app on the web so that every person with
+                internet access can use it on all platforms.
+              </p>
+            </div>
+            <a href="learnmore.html">
+              <button id="default-btn">Learn more</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-right-half">
+          <div class="service-right-text">
+            <img src="images/internet (1).png" class="services-imgs" />
+            <h1>Website development</h1>
+            <div>
+              <p>Desire to have your trace on the internet?</p>
+              <br />
+              <p>
+                Enhance your status by adding your prints on the web with a
+                website that will show your professionalism.
+              </p>
+            </div>
+            <a href="learnmore.html">
+              <button id="default-btn">Learn more</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact us Section-->
+    <section id="contact-us">
+      <div id="contact-us-content">
+        <div class="contact-left-section">
+          <div class="contact-us-top">
+            <div class="contact-text">
+              <h1>Let's develop</h1>
+              <h1>something</h1>
+              <h1 id="emphasis-text">great together.</h1>
+            </div>
+
+            <div class="contact-logo">
+              <img src="images/moonital logo white fixed 431x431.png" />
+              <p>Moonital</p>
+            </div>
+          </div>
+
+          <form
+            onsubmit="sendEmail(); reset(); return false;"
+            class="contact-form"
+          >
+            <div class="input-section-left">
+              <div class="input-box">
+                <p>Name: *</p>
+                <input id="name" type="text" required />
+              </div>
+              <div class="input-box">
+                <p>Email: *</p>
+                <input id="email" type="text" required />
+              </div>
+              <div class="input-box">
+                <p>Phone Number:</p>
+                <input id="phone-number" type="text" />
+              </div>
+            </div>
+            <div class="input-section-right">
+              <div class="input-box">
+                <p>Company Name:</p>
+                <input id="company-name" type="text" />
+              </div>
+              <div class="input-box">
+                <p class="message-text">Message: *</p>
+                <textarea
+                  id="contact-us-message-box"
+                  style="resize: none"
+                  columns="1"
+                  rows="1"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" id="default-btn">Submit</button>
+            </div>
+          </form>
+
+          <a id="contact-email" href="mailto:contact@moonital.com">
+            Email : contact@moonital.com
+          </a>
+
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+          <script>
+            function sendEmail() {
+              Email.send({
+                SecureToken: "5088e37a-d1aa-4406-b284-eac1098aa2a9",
+                To: "contact@moonital.com",
+                From: document.getElementById("email").value,
+                Subject: "Email From Website",
+                Body:
+                  "Name: " +
+                  document.getElementById("name").value +
+                  "<br> Email: " +
+                  document.getElementById("email").value +
+                  "<br> Company Name: " +
+                  document.getElementById("company-name").value +
+                  "<br> Phone Number: " +
+                  document.getElementById("phone-number").value +
+                  "<br> Message: " +
+                  document.getElementById("contact-us-message-box").value,
+              }).then((message) => alert("Message Sent Succesfully"));
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!--Footer-->
+  <footer>
+    <div id="footer-content">
+      <div class="footer-part-1">
+        <div>
+          <button
+            onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})"
+          >
+            <p>Home</p>
+          </button>
+        </div>
+        <div>
+          <button
+            onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})"
+          >
+            <p>About</p>
+          </button>
+        </div>
+        <div>
+          <button
+            onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"
+          >
+            <p>Services</p>
+          </button>
+        </div>
+        <div>
+          <button
+            onclick="document.getElementById('contact-us').scrollIntoView({behavior:'smooth'})"
+          >
+            <p>Contact us</p>
+          </button>
+        </div>
+        <div>
+          <a
+            href="https://moonital.com/privacyandterms.html#Terms-And-Services"
+          >
+            <button type="submit">Privacy Policy</button></a
+          >
+        </div>
+        <div>
+          <a href="https://moonital.com/privacyandterms.html#Privacy-Policy">
+            <button type="submit">Terms and Conditions</button></a
+          >
+        </div>
+      </div>
+
+      <div class="footer-mail-logo">
+        <div class="footer-part-2">
+          <p>Email : contact@moonital.com</p>
+        </div>
+
+        <div class="footer-part-3">
+          <img src="images/moonital logo white fixed 431x431.png" />
+          <p>Moonital</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
